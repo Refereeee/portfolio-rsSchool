@@ -1,0 +1,76 @@
+button {
+  cursor: pointer;
+}
+
+
+
+
+
+%gold{
+  background-color: #BDAE82;
+}
+
+%black{
+  background-color:  #000000;
+}
+
+button.gold{
+  width: 22rem;
+  height: 5.5rem;
+  @extend %gold;
+
+  &:hover{
+  color:#ffffff;
+    transition: .3s;
+};
+
+}
+
+button{
+  border: 1px solid #BDAE82;
+  width: 22rem;
+  height: 5.5rem;
+  @extend %black;
+
+  &:hover{
+    color:#ffffff;
+  };
+  &.btn_bord_none{
+    border:none;
+  }
+}
+
+//section{
+//  position:relative;
+//  overflow: hidden;
+//}
+button{
+  position: relative;
+}
+button:focus {
+  outline: none;
+}
+
+//button .span{
+//  position: absolute;
+//}
+
+button .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+
+

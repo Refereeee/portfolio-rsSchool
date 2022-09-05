@@ -1,0 +1,134 @@
+@mixin merri_b($s,$h) {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $s;
+  line-height: $h;
+}
+
+@mixin merri_reg($s,$h){
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $s;
+  line-height: $h;
+}
+
+%main-title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.2rem;
+  line-height: 6.4rem;
+}
+
+%title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 8rem;
+}
+
+%contacts-title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 6.4rem;
+}
+
+@mixin inter_reg($s,$h){
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $s;
+  line-height: $h;
+}
+
+@mixin inter_bold($s,$h){
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $s;
+  line-height: $h;
+}
+
+h1{
+  @include merri_b(6rem,12rem);
+  @media (max-width: 76.8rem) {
+      @include merri_reg(3.2rem,6.4rem)
+  }
+}
+
+h2{
+  @include merri_b(4rem,8rem);
+  @media (max-width: 76.8rem) {
+    @include merri_b(3.2rem,6.4rem);
+  }
+}
+
+h3{
+  @include merri_b(2.8rem,5.6rem)
+}
+
+h4{
+  @include inter_bold(2rem, 4rem)
+}
+
+.price__cost{
+  @include merri_b(2.4rem, 4.8rem)
+}
+
+.btn_text{
+  @include inter_reg(2rem, 4rem)
+}
+
+//.nav__text{
+//  @include inter_reg(2rem, 5rem)
+//}
+
+.nav__elem>a,.footer__text span:nth-of-type(1),.footer__middle a{
+  @include inter_reg(2rem, 5rem);
+  //@media (max-width: 76.8rem) {
+  //  @include inter_reg(3.5rem, 7.3rem);
+  //}
+}
+
+.nav__elem>a{
+  @media (max-width: 76.8rem) {
+    @include merri_b(4rem, 7.3rem);
+  }
+}
+
+.nav__text_bold{
+  @include inter_bold(2rem, 5rem)
+}
+
+.skill_price_text{
+  @include inter_reg(1.8rem, 3.6rem)
+}
+
+.price__text_last{
+  @include inter_reg(1.8rem, 3.6rem)
+}
+
+.footer__text span:nth-of-type(3) a{
+  @include inter_reg(1.9rem, 5rem)
+}
+
+.footer__date{
+  @include inter_reg(2rem, 5rem)
+}
+
+.hero__title_adaptive{
+  @include merri_reg(3.2rem, 6.4rem)
+}
+
+//.contacts__title{
+//  @include merri_b(3.2rem, 6.4rem)
+//}
+
+.burger_black{
+  @include merri_b(4rem,7.3rem)
+}

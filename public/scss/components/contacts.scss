@@ -1,0 +1,101 @@
+//@import  "./../base/fonts.scss";
+.contacts_theme{
+  background-image: url('../../assets/imgs/themes/footer.jpg');
+  background-size: 100%;
+
+  @media (max-width: 76.8rem) {
+    background-image: url('../../assets/imgs/themes/footer.jpg');
+    background-size: 119rem 60rem;
+    background-repeat: no-repeat;
+    background-position: -22rem 0rem;
+    padding-bottom: 11rem;
+  }
+}
+.contacts{
+  background-image: url('../../assets/imgs/contacts/contacts.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  @media (max-width: 76.8rem) {
+    background-image: url('../../assets/imgs/contacts/contacts.jpg');
+    background-size: 119rem 60rem;
+    background-repeat: no-repeat;
+    background-position: -22rem 0rem;
+    padding-bottom: 11rem;
+  }
+  &__title{
+    @media (max-width: 76.8rem) {
+      padding-left: 13.3rem;
+      //@extend %contacts-title;
+      @include merri_b(3.2rem, 6.4rem)
+    }
+    @media (min-width: 320px) and (max-width: 768px) {
+      padding-left: 4.3rem;
+    }
+  }
+
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 0px 19.4rem 95rem;
+    @media (min-width: 768px) and(max-width: 1230px) {
+      padding: 6rem 0rem 0rem 30rem;
+    }
+    @media (min-width: 610px) and(max-width: 768px) {
+      padding: 6rem 0rem 0rem 14rem;
+    }
+    @media (min-width: 360px) and (max-width: 610px) {
+      padding: 3rem 0rem 0rem 2rem;
+    }
+    & button{
+      @media (max-width: 76.8rem) {
+        margin-left: 11.5rem;
+      }
+      @media (max-width: 500px) {
+        margin-left: 8.5rem;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+
+    & input {
+      background: none;
+      border: 0.2rem solid #BDAE82;
+      box-sizing: border-box;
+      height: 5rem;
+      color:$gold;
+      padding: 0 0 0 1.3rem;
+      @media (max-width: 76.8rem) {
+        width: 30rem;
+      }
+      &::placeholder{
+        color:$gold;
+        padding:2rem 0 0 0.5rem;
+      }
+    }
+
+    & textarea {
+      background: none;
+      border: 0.2rem solid #BDAE82;
+      box-sizing: border-box;
+      height: 10rem;
+      color:$gold;
+      padding: 0.3rem 0 0 2rem;
+      resize: none;
+      @media (max-width: 76.8rem) {
+        width: 30rem;
+        padding: 0.3rem 0 0 1.5rem;
+      }
+      &::placeholder{
+        color:$gold;
+      }
+    }
+  }
+}
+

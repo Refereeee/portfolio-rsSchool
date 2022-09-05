@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,OAAO,CAAC;EACN,gBAAgB,EAAE,wCAAwC;CAC3D",
+    "sources": [
+        "style.scss",
+        "components/hero.scss",
+        "layouts/header.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

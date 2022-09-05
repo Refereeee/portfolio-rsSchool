@@ -1,0 +1,162 @@
+.portfolio {
+  //background-color: $bg-dark;
+
+
+  &__title {
+    position: relative;
+    padding-top: 9rem;
+    width: 18.1rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 23.8rem;
+      color: #000000;
+      height: 0.2rem;
+      background-color: #bdae82;
+      left: -25.8rem;
+      bottom: 3.9rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 23.8rem;
+      color: #000000;
+      height: 0.2rem;
+      background-color: $gold;
+      left: 20.2rem;
+      bottom: 3.95rem;
+    }
+
+    @media (max-width: 76.8rem) {
+      padding-top: 14.7rem;
+      padding-left: 2rem;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 9.2rem;
+        color: #000000;
+        height: 0.2rem;
+        background-color: #bdae82;
+        left: -9.3rem;
+        bottom: 3.1rem;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 9rem;
+        color: #000000;
+        height: 0.2rem;
+        background-color: #bdae82;
+        left: 18.3rem;
+        bottom: 3.1rem;
+      }
+    }
+  }
+
+  &__btns {
+    padding-left: 25.5rem;
+    display: flex;
+    gap: 0.5rem;
+    width: 114.7rem;
+    max-width: 100%;
+    padding-top: 6rem;
+    @media (max-width: 76.8rem) {
+      max-width: 45.5rem;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      margin: 0 auto;
+      padding-top: 5.7rem;
+      padding-left: 0.5rem;
+    }
+
+
+    & button {
+      ////color: $gold;
+      //background-color: transparent;
+
+
+    }
+
+    & button:nth-of-type(4) {
+      //background-color: $gold;
+      //color: $bg-dark;
+      //
+      //&:hover {
+      //  color: #ffffff;
+      //  transition: .3s;
+      //}
+
+    }
+
+    .active_btn {
+      background-color: $gold;
+      color: $bg-dark;
+    }
+
+    .active_btn_white {
+      background-color: $bg-dark;
+      color: $gold;
+    }
+
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding-top: 6rem;
+  }
+
+  //@media (max-width: 76.8rem) {
+  //  &_img {
+  //    padding-left: 13.7rem;
+  //  }
+  //}
+
+
+  &_img img {
+    @media (max-width: 768px) {
+      padding-left: 0rem;
+      width: 90vw;
+    }
+
+    @media (max-width: 320px) {
+      padding-left: 0rem;
+      width: 60vw;
+    }
+  }
+
+  @media (max-width: 500px) {
+
+    &__title {
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8rem;
+        color: #000000;
+        height: 0.2rem;
+        background-color: #bdae82;
+        left: -9rem;
+        bottom: 3.1rem;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8rem;
+        color: #000000;
+        height: 0.2rem;
+        background-color: #bdae82;
+        left: 19.3rem;
+        bottom: 3.1rem;
+      }
+    }
+  }
+}
+

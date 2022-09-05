@@ -1,0 +1,243 @@
+.header {
+  background-image: url('../../assets/imgs/hero/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100%;
+  @media (max-width: 76.8rem) {
+    background-size: 96.8rem 61rem;
+    background-position: 1px -24px;
+  }
+}
+
+.white_theme{
+  background-image: url('../../assets/imgs/themes/header.jpg');
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    padding-top: 2.5rem;
+    @media (max-width: 76.8rem) {
+      padding-left: 4rem;
+      padding-top: 2.7rem;
+    }
+  }
+
+
+  &__menu {
+    display: flex;
+    @media (max-width: 76.8rem) {
+      padding-right: 11.5rem;
+      position: relative;
+    }
+    @media (max-width: 500px){
+      padding-right: 8.5rem;
+    }
+  }
+
+  &__elem > a {
+    text-decoration: none;
+    transition: color 0.9s;
+    &:hover{
+      color: $gold;
+    }
+  }
+
+  &__translate{
+    display: flex;
+    gap: 1rem;
+    padding-right: 4rem;
+    @media (max-width: 76.8rem) {
+      padding-right: 0rem;
+    }
+  }
+
+  &__text_bold{
+    color:$white
+  }
+
+  &__translate > &__text_bold:first-child {
+    //color: $gold;
+    cursor: pointer;
+    transition: color 0.9s;
+    &:hover{
+      color: #4d2323;
+    }
+  }
+
+  &__translate > &__text_bold:last-child {
+    //color: $white;
+    cursor: pointer;
+    transition: color 0.9s;
+    &:hover{
+      color: #4d2323;
+    }
+  }
+
+  &__translate > &__text_bold:nth-child(2) {
+    transition: color 0.9s;
+    @media (max-width: 76.8rem) {
+      padding-left: 0rem;
+      padding-right: 0.7rem;
+    }
+  }
+
+  .golder{
+    color: $gold;
+  }
+
+  &__list {
+    display: flex;
+    gap: 3.1rem;
+    padding: 2rem 0 0 5rem;
+    @media (max-width: 76.8rem) {
+      position: absolute;
+      flex-direction: column;
+      left: -34rem;
+      top: 12rem;
+      z-index: 6;
+      gap: 0;
+      display: none;
+    }
+    @media (max-width: 600px) {
+      left: -14rem;
+    }
+  }
+
+
+  &__list &__elem:nth-child(6) {
+    display: flex;
+    gap: 1rem;
+    @media (max-width: 76.8rem) {
+      display: block;
+    }
+  }
+
+  &__list &__elem:nth-child(7) {
+    @media (max-width: 76.8rem) {
+      display: block;
+    }
+    padding-left: 2.4rem;
+    padding-top: 0.6rem;
+  }
+
+  &__list li {
+    list-style: none;
+  }
+  .df{
+    transition-delay: 1000ms;
+    display: flex;
+  }
+  &__block{
+    padding-left: 3rem;
+    padding-top: 2rem;
+    display: flex;
+    position: relative;
+    @media (max-width: 76.8rem) {
+      padding-left: 0rem;
+      padding-top: 2rem;
+      gap: 3rem;
+    }
+    &__translate{
+      display: flex;
+      padding-right: 4rem;
+      gap: 1rem;
+    }
+    & .hamburger{
+      display: none;
+      @media (max-width: 76.8rem) {
+        display: flex;
+        left: 20rem;
+      }
+    }
+  }
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 5;
+  position: absolute;
+  left: 10.6rem;
+  top: 2.5rem;
+  &:hover{
+    color: $gold;
+    transition: 1s;
+  }
+  &:active{
+    color: $gold;
+    transition: 0.5s;
+  }
+}
+
+.line {
+  width: 124%;
+  height: 4px;
+  margin: 4px 0;
+  z-index: 15;
+  transition: all 0.3s ease-in-out;
+}
+
+.opener{
+  position: absolute;
+  width: 0;
+  height: 1000rem;
+  right: -135px;
+  top: 0px;
+  z-index: 3;
+  overflow-x: hidden;
+  transition: 0.5s
+}
+
+.hamburger.open .line1 {
+  transform: rotate(
+                  -45deg
+  ) translate(-10px, 5px);
+}
+
+.hamburger.open .line2 {
+  opacity: 0;
+}
+
+.hamburger.open .line3 {
+  transform: rotate(
+                  45deg
+  ) translate(-10px, -5px);
+}
+
+.nav__switch svg:nth-of-type(2){
+  display: none;
+}
+
+
+.nav__switch svg{
+  fill: white;
+}
+
+
+.nav__switch {
+  cursor: pointer;
+  :hover {
+    fill: $gold;
+  }
+}
+
+.add_fill{
+  fill:black;
+}
+
+.op{
+  //transition:1s;
+  width:62rem;
+}
+
+
+

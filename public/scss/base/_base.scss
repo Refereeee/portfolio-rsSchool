@@ -1,0 +1,115 @@
+:root {
+  font-size: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  max-width: 100%;
+  width: 144rem;
+  margin:0 auto;
+}
+
+.title{
+  max-width: 100%;
+  margin:0 auto;
+  //@extend %title;
+}
+
+.svg{
+  cursor: pointer;
+}
+.svg:hover{
+  fill:$gold;
+  transition: .3s;
+}
+
+.wrapper{
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+
+.body_theme {
+  color: black;
+  background-color: white;
+}
+
+.body_theme_dark {
+  color: black;
+  background-color: black;
+}
+.body_color_dark{
+  color: black;
+}
+
+.font_white{
+  color:$white;
+}
+
+.font_gold{
+  color:$gold;
+}
+
+
+.font_black{
+  color:$bg-dark;
+}
+
+.font_big_black{
+  color:$bg-dark;
+}
+
+button.btn_white{
+  color: $bg-dark;
+  background-color: $gold;
+  &:hover{
+    background-color: $bg-dark;
+    color: $gold;
+  }
+}
+
+button.btn_gold{
+  color:$gold;
+  background-color: transparent;
+  &:hover {
+    color: #ffffff;
+    background-color:$gold;
+    transition: .3s;
+  }
+}
+
+.contacts__form .inp_text.active_inp::placeholder{
+  color:$bg-dark;
+}
+
+
+button.btn_contacts_hero{
+  color: $bg-dark;
+  background-color: $white;
+  &:hover{
+    background-color: $bg-dark;
+    color: $gold;
+  }
+}
+
+.overf{
+  overflow: hidden;
+}
+
+.bg_white_burger{
+  background-color: $white;
+}
+.bg_black_burger{
+  background-color: $bg-dark;
+}
+
+
+
+
+
+
