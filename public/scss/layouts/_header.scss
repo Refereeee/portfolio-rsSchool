@@ -3,9 +3,9 @@
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: 100%;
-  @media (max-width: 76.8rem) {
+  @media (max-width: 768px) {
     background-size: 96.8rem 61rem;
-    background-position: 1px -24px;
+    background-position: 0 -24px;
   }
 }
 

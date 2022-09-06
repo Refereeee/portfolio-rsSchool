@@ -384,10 +384,10 @@ button .circle {
   background-position: center 0;
   background-size: 100%;
 }
-@media (max-width: 76.8rem) {
+@media (max-width: 768px) {
   .header {
     background-size: 96.8rem 61rem;
-    background-position: 1px -24px;
+    background-position: 0 -24px;
   }
 }
 
@@ -753,7 +753,7 @@ button .circle {
   background-repeat: no-repeat;
   background-size: 100.1%;
 }
-@media (max-width: 76.8rem) {
+@media (max-width: 768px) {
   .hero {
     background-size: 96.8rem 61rem;
     background-position: 0rem -9.2rem;
@@ -1035,6 +1035,7 @@ button .circle {
   flex-wrap: wrap;
   gap: 2.5rem;
   padding-top: 6rem;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .portfolio_img img {
@@ -1409,6 +1410,9 @@ button .circle {
     padding-top: 6rem;
     flex-direction: column;
     padding-left: 3rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
 }
 .price__card {
@@ -1480,7 +1484,7 @@ button .circle {
   background-image: url("../../assets/imgs/themes/footer.jpg");
   background-size: 100%;
 }
-@media (max-width: 76.8rem) {
+@media (max-width: 768px) {
   .contacts_theme {
     background-image: url("../../assets/imgs/themes/footer.jpg");
     background-size: 119rem 60rem;
@@ -1495,7 +1499,7 @@ button .circle {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-@media (max-width: 76.8rem) {
+@media (max-width: 768px) {
   .contacts {
     background-image: url("../../assets/imgs/contacts/contacts.jpg");
     background-size: 119rem 60rem;
