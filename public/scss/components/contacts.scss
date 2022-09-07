@@ -1,7 +1,8 @@
 //@import  "./../base/fonts.scss";
 .contacts_theme{
   background-image: url('../../assets/imgs/themes/footer.jpg');
-  background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 120%;
 
   @media (max-width: 768px) {
     background-image: url('../../assets/imgs/themes/footer.jpg');
@@ -13,7 +14,7 @@
 }
 .contacts{
   background-image: url('../../assets/imgs/contacts/contacts.jpg');
-  background-size: 100%;
+  background-size: 120%;
   background-repeat: no-repeat;
   @media (max-width: 768px) {
     background-image: url('../../assets/imgs/contacts/contacts.jpg');
